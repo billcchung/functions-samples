@@ -1,0 +1,913 @@
+Available formats:
+{
+  '3dostr': { description: '3DO STR', canDemux: true, canMux: false },
+  '3g2': {
+    description: '3GP2 (3GPP2 file format)',
+    canDemux: true,
+    canMux: true
+  },
+  '3gp': {
+    description: '3GP (3GPP file format)',
+    canDemux: true,
+    canMux: true
+  },
+  '4xm': { description: '4X Technologies', canDemux: true, canMux: false },
+  a64: {
+    description: 'a64 - video for Commodore 64',
+    canDemux: false,
+    canMux: true
+  },
+  aa: {
+    description: 'Audible AA format files',
+    canDemux: true,
+    canMux: false
+  },
+  aac: {
+    description: 'raw ADTS AAC (Advanced Audio Coding)',
+    canDemux: true,
+    canMux: false
+  },
+  ac3: { description: 'raw AC-3', canDemux: true, canMux: true },
+  acm: { description: 'Interplay ACM', canDemux: true, canMux: false },
+  act: {
+    description: 'ACT Voice file format',
+    canDemux: true,
+    canMux: false
+  },
+  adf: { description: 'Artworx Data Format', canDemux: true, canMux: false },
+  adp: { description: 'ADP', canDemux: true, canMux: false },
+  ads: { description: 'Sony PS2 ADS', canDemux: true, canMux: false },
+  adts: {
+    description: 'ADTS AAC (Advanced Audio Coding)',
+    canDemux: false,
+    canMux: true
+  },
+  adx: { description: 'CRI ADX', canDemux: true, canMux: true },
+  aea: { description: 'MD STUDIO audio', canDemux: true, canMux: false },
+  afc: { description: 'AFC', canDemux: true, canMux: false },
+  aiff: { description: 'Audio IFF', canDemux: true, canMux: true },
+  aix: { description: 'CRI AIX', canDemux: true, canMux: false },
+  alaw: { description: 'PCM A-law', canDemux: true, canMux: true },
+  alias_pix: {
+    description: 'Alias/Wavefront PIX image',
+    canDemux: true,
+    canMux: false
+  },
+  amr: { description: '3GPP AMR', canDemux: true, canMux: true },
+  amrnb: { description: 'raw AMR-NB', canDemux: true, canMux: false },
+  amrwb: { description: 'raw AMR-WB', canDemux: true, canMux: false },
+  anm: {
+    description: 'Deluxe Paint Animation',
+    canDemux: true,
+    canMux: false
+  },
+  apc: { description: 'CRYO APC', canDemux: true, canMux: false },
+  ape: { description: "Monkey's Audio", canDemux: true, canMux: false },
+  apng: {
+    description: 'Animated Portable Network Graphics',
+    canDemux: true,
+    canMux: true
+  },
+  aptx: {
+    description: 'raw aptX (Audio Processing Technology for Bluetooth)',
+    canDemux: true,
+    canMux: true
+  },
+  aptx_hd: {
+    description: 'raw aptX HD (Audio Processing Technology for Bluetooth)',
+    canDemux: true,
+    canMux: true
+  },
+  aqtitle: { description: 'AQTitle subtitles', canDemux: true, canMux: false },
+  asf: {
+    description: 'ASF (Advanced / Active Streaming Format)',
+    canDemux: true,
+    canMux: true
+  },
+  asf_o: {
+    description: 'ASF (Advanced / Active Streaming Format)',
+    canDemux: true,
+    canMux: false
+  },
+  asf_stream: {
+    description: 'ASF (Advanced / Active Streaming Format)',
+    canDemux: false,
+    canMux: true
+  },
+  ass: {
+    description: 'SSA (SubStation Alpha) subtitle',
+    canDemux: true,
+    canMux: true
+  },
+  ast: { description: 'AST (Audio Stream)', canDemux: true, canMux: true },
+  au: { description: 'Sun AU', canDemux: true, canMux: true },
+  avfoundation: {
+    description: 'AVFoundation input device',
+    canDemux: true,
+    canMux: false
+  },
+  avi: {
+    description: 'AVI (Audio Video Interleaved)',
+    canDemux: true,
+    canMux: true
+  },
+  avm2: {
+    description: 'SWF (ShockWave Flash) (AVM2)',
+    canDemux: false,
+    canMux: true
+  },
+  avr: {
+    description: 'AVR (Audio Visual Research)',
+    canDemux: true,
+    canMux: false
+  },
+  avs: {
+    description: 'Argonaut Games Creature Shock',
+    canDemux: true,
+    canMux: false
+  },
+  avs2: {
+    description: 'raw AVS2-P2/IEEE1857.4 video',
+    canDemux: true,
+    canMux: true
+  },
+  bethsoftvid: {
+    description: 'Bethesda Softworks VID',
+    canDemux: true,
+    canMux: false
+  },
+  bfi: {
+    description: 'Brute Force & Ignorance',
+    canDemux: true,
+    canMux: false
+  },
+  bfstm: {
+    description: 'BFSTM (Binary Cafe Stream)',
+    canDemux: true,
+    canMux: false
+  },
+  bin: { description: 'Binary text', canDemux: true, canMux: false },
+  bink: { description: 'Bink', canDemux: true, canMux: false },
+  bit: {
+    description: 'G.729 BIT file format',
+    canDemux: true,
+    canMux: true
+  },
+  bmp_pipe: { description: 'piped bmp sequence', canDemux: true, canMux: false },
+  bmv: { description: 'Discworld II BMV', canDemux: true, canMux: false },
+  boa: { description: 'Black Ops Audio', canDemux: true, canMux: false },
+  brender_pix: { description: 'BRender PIX image', canDemux: true, canMux: false },
+  brstm: {
+    description: 'BRSTM (Binary Revolution Stream)',
+    canDemux: true,
+    canMux: false
+  },
+  c93: { description: 'Interplay C93', canDemux: true, canMux: false },
+  caf: {
+    description: 'Apple CAF (Core Audio Format)',
+    canDemux: true,
+    canMux: true
+  },
+  cavsvideo: {
+    description: 'raw Chinese AVS (Audio Video Standard) video',
+    canDemux: true,
+    canMux: true
+  },
+  cdg: { description: 'CD Graphics', canDemux: true, canMux: false },
+  cdxl: {
+    description: 'Commodore CDXL video',
+    canDemux: true,
+    canMux: false
+  },
+  cine: { description: 'Phantom Cine', canDemux: true, canMux: false },
+  codec2: { description: 'codec2 .c2 muxer', canDemux: true, canMux: true },
+  codec2raw: { description: 'raw codec2 muxer', canDemux: true, canMux: true },
+  concat: {
+    description: 'Virtual concatenation script',
+    canDemux: true,
+    canMux: false
+  },
+  crc: { description: 'CRC testing', canDemux: false, canMux: true },
+  dash: { description: 'DASH Muxer', canDemux: false, canMux: true },
+  data: { description: 'raw data', canDemux: true, canMux: true },
+  daud: { description: 'D-Cinema audio', canDemux: true, canMux: true },
+  dcstr: { description: 'Sega DC STR', canDemux: true, canMux: false },
+  dds_pipe: { description: 'piped dds sequence', canDemux: true, canMux: false },
+  dfa: { description: 'Chronomaster DFA', canDemux: true, canMux: false },
+  dirac: { description: 'raw Dirac', canDemux: true, canMux: true },
+  dnxhd: {
+    description: 'raw DNxHD (SMPTE VC-3)',
+    canDemux: true,
+    canMux: true
+  },
+  dpx_pipe: { description: 'piped dpx sequence', canDemux: true, canMux: false },
+  dsf: {
+    description: 'DSD Stream File (DSF)',
+    canDemux: true,
+    canMux: false
+  },
+  dsicin: {
+    description: 'Delphine Software International CIN',
+    canDemux: true,
+    canMux: false
+  },
+  dss: {
+    description: 'Digital Speech Standard (DSS)',
+    canDemux: true,
+    canMux: false
+  },
+  dts: { description: 'raw DTS', canDemux: true, canMux: true },
+  dtshd: { description: 'raw DTS-HD', canDemux: true, canMux: false },
+  dv: { description: 'DV (Digital Video)', canDemux: true, canMux: true },
+  dvbsub: { description: 'raw dvbsub', canDemux: true, canMux: false },
+  dvbtxt: { description: 'dvbtxt', canDemux: true, canMux: false },
+  dvd: { description: 'MPEG-2 PS (DVD VOB)', canDemux: false, canMux: true },
+  dxa: { description: 'DXA', canDemux: true, canMux: false },
+  ea: {
+    description: 'Electronic Arts Multimedia',
+    canDemux: true,
+    canMux: false
+  },
+  ea_cdata: {
+    description: 'Electronic Arts cdata',
+    canDemux: true,
+    canMux: false
+  },
+  eac3: { description: 'raw E-AC-3', canDemux: true, canMux: true },
+  epaf: {
+    description: 'Ensoniq Paris Audio File',
+    canDemux: true,
+    canMux: false
+  },
+  exr_pipe: { description: 'piped exr sequence', canDemux: true, canMux: false },
+  f32be: {
+    description: 'PCM 32-bit floating-point big-endian',
+    canDemux: true,
+    canMux: true
+  },
+  f32le: {
+    description: 'PCM 32-bit floating-point little-endian',
+    canDemux: true,
+    canMux: true
+  },
+  f4v: {
+    description: 'F4V Adobe Flash Video',
+    canDemux: false,
+    canMux: true
+  },
+  f64be: {
+    description: 'PCM 64-bit floating-point big-endian',
+    canDemux: true,
+    canMux: true
+  },
+  f64le: {
+    description: 'PCM 64-bit floating-point little-endian',
+    canDemux: true,
+    canMux: true
+  },
+  ffmetadata: {
+    description: 'FFmpeg metadata in text',
+    canDemux: true,
+    canMux: true
+  },
+  fifo: {
+    description: 'FIFO queue pseudo-muxer',
+    canDemux: false,
+    canMux: true
+  },
+  fifo_test: { description: 'Fifo test muxer', canDemux: false, canMux: true },
+  film_cpk: { description: 'Sega FILM / CPK', canDemux: true, canMux: true },
+  filmstrip: { description: 'Adobe Filmstrip', canDemux: true, canMux: true },
+  fits: {
+    description: 'Flexible Image Transport System',
+    canDemux: true,
+    canMux: true
+  },
+  flac: { description: 'raw FLAC', canDemux: true, canMux: true },
+  flic: {
+    description: 'FLI/FLC/FLX animation',
+    canDemux: true,
+    canMux: false
+  },
+  flv: { description: 'FLV (Flash Video)', canDemux: true, canMux: true },
+  framecrc: { description: 'framecrc testing', canDemux: false, canMux: true },
+  framehash: {
+    description: 'Per-frame hash testing',
+    canDemux: false,
+    canMux: true
+  },
+  framemd5: {
+    description: 'Per-frame MD5 testing',
+    canDemux: false,
+    canMux: true
+  },
+  frm: { description: 'Megalux Frame', canDemux: true, canMux: false },
+  fsb: { description: 'FMOD Sample Bank', canDemux: true, canMux: false },
+  g722: { description: 'raw G.722', canDemux: true, canMux: true },
+  g723_1: { description: 'raw G.723.1', canDemux: true, canMux: true },
+  g726: {
+    description: 'raw big-endian G.726 ("left-justified")',
+    canDemux: true,
+    canMux: true
+  },
+  g726le: {
+    description: 'raw little-endian G.726 ("right-justified")',
+    canDemux: true,
+    canMux: true
+  },
+  g729: {
+    description: 'G.729 raw format demuxer',
+    canDemux: true,
+    canMux: false
+  },
+  gdv: {
+    description: 'Gremlin Digital Video',
+    canDemux: true,
+    canMux: false
+  },
+  genh: { description: 'GENeric Header', canDemux: true, canMux: false },
+  gif: { description: 'GIF Animation', canDemux: true, canMux: true },
+  gsm: { description: 'raw GSM', canDemux: true, canMux: true },
+  gxf: {
+    description: 'GXF (General eXchange Format)',
+    canDemux: true,
+    canMux: true
+  },
+  h261: { description: 'raw H.261', canDemux: true, canMux: true },
+  h263: { description: 'raw H.263', canDemux: true, canMux: true },
+  h264: { description: 'raw H.264 video', canDemux: true, canMux: true },
+  hash: { description: 'Hash testing', canDemux: false, canMux: true },
+  hds: { description: 'HDS Muxer', canDemux: false, canMux: true },
+  hevc: { description: 'raw HEVC video', canDemux: true, canMux: true },
+  hls: {
+    description: 'Apple HTTP Live Streaming',
+    canDemux: true,
+    canMux: true
+  },
+  applehttp: {
+    description: 'Apple HTTP Live Streaming',
+    canDemux: true,
+    canMux: false
+  },
+  hnm: { description: 'Cryo HNM v4', canDemux: true, canMux: false },
+  ico: {
+    description: 'Microsoft Windows ICO',
+    canDemux: true,
+    canMux: true
+  },
+  idcin: { description: 'id Cinematic', canDemux: true, canMux: false },
+  idf: { description: 'iCE Draw File', canDemux: true, canMux: false },
+  iff: {
+    description: 'IFF (Interchange File Format)',
+    canDemux: true,
+    canMux: false
+  },
+  ilbc: { description: 'iLBC storage', canDemux: true, canMux: true },
+  image2: { description: 'image2 sequence', canDemux: true, canMux: true },
+  image2pipe: {
+    description: 'piped image2 sequence',
+    canDemux: true,
+    canMux: true
+  },
+  ingenient: { description: 'raw Ingenient MJPEG', canDemux: true, canMux: false },
+  ipmovie: { description: 'Interplay MVE', canDemux: true, canMux: false },
+  ipod: {
+    description: 'iPod H.264 MP4 (MPEG-4 Part 14)',
+    canDemux: false,
+    canMux: true
+  },
+  ircam: {
+    description: 'Berkeley/IRCAM/CARL Sound Format',
+    canDemux: true,
+    canMux: true
+  },
+  ismv: {
+    description: 'ISMV/ISMA (Smooth Streaming)',
+    canDemux: false,
+    canMux: true
+  },
+  iss: { description: 'Funcom ISS', canDemux: true, canMux: false },
+  iv8: {
+    description: 'IndigoVision 8000 video',
+    canDemux: true,
+    canMux: false
+  },
+  ivf: { description: 'On2 IVF', canDemux: true, canMux: true },
+  ivr: {
+    description: 'IVR (Internet Video Recording)',
+    canDemux: true,
+    canMux: false
+  },
+  j2k_pipe: { description: 'piped j2k sequence', canDemux: true, canMux: false },
+  jacosub: {
+    description: 'JACOsub subtitle format',
+    canDemux: true,
+    canMux: true
+  },
+  jpeg_pipe: { description: 'piped jpeg sequence', canDemux: true, canMux: false },
+  jpegls_pipe: {
+    description: 'piped jpegls sequence',
+    canDemux: true,
+    canMux: false
+  },
+  jv: { description: 'Bitmap Brothers JV', canDemux: true, canMux: false },
+  latm: { description: 'LOAS/LATM', canDemux: false, canMux: true },
+  lavfi: {
+    description: 'Libavfilter virtual input device',
+    canDemux: true,
+    canMux: false
+  },
+  live_flv: {
+    description: 'live RTMP FLV (Flash Video)',
+    canDemux: true,
+    canMux: false
+  },
+  lmlm4: { description: 'raw lmlm4', canDemux: true, canMux: false },
+  loas: {
+    description: 'LOAS AudioSyncStream',
+    canDemux: true,
+    canMux: false
+  },
+  lrc: { description: 'LRC lyrics', canDemux: true, canMux: true },
+  lvf: { description: 'LVF', canDemux: true, canMux: false },
+  lxf: {
+    description: 'VR native stream (LXF)',
+    canDemux: true,
+    canMux: false
+  },
+  m4v: { description: 'raw MPEG-4 video', canDemux: true, canMux: true },
+  matroska: { description: 'Matroska', canDemux: true, canMux: true },
+  webm: { description: 'Matroska / WebM', canDemux: true, canMux: true },
+  md5: { description: 'MD5 testing', canDemux: false, canMux: true },
+  mgsts: {
+    description: 'Metal Gear Solid: The Twin Snakes',
+    canDemux: true,
+    canMux: false
+  },
+  microdvd: {
+    description: 'MicroDVD subtitle format',
+    canDemux: true,
+    canMux: true
+  },
+  mjpeg: { description: 'raw MJPEG video', canDemux: true, canMux: true },
+  mjpeg_2000: {
+    description: 'raw MJPEG 2000 video',
+    canDemux: true,
+    canMux: false
+  },
+  mkvtimestamp_v2: {
+    description: 'extract pts as timecode v2 format, as defined by mkvtoolnix',
+    canDemux: false,
+    canMux: true
+  },
+  mlp: { description: 'raw MLP', canDemux: true, canMux: true },
+  mlv: {
+    description: 'Magic Lantern Video (MLV)',
+    canDemux: true,
+    canMux: false
+  },
+  mm: {
+    description: 'American Laser Games MM',
+    canDemux: true,
+    canMux: false
+  },
+  mmf: { description: 'Yamaha SMAF', canDemux: true, canMux: true },
+  mov: { description: 'QuickTime / MOV', canDemux: true, canMux: true },
+  mp4: { description: 'QuickTime / MOV', canDemux: true, canMux: true },
+  m4a: { description: 'QuickTime / MOV', canDemux: true, canMux: false },
+  mj2: { description: 'QuickTime / MOV', canDemux: true, canMux: false },
+  mp2: {
+    description: 'MP2 (MPEG audio layer 2)',
+    canDemux: false,
+    canMux: true
+  },
+  mp3: {
+    description: 'MP3 (MPEG audio layer 3)',
+    canDemux: true,
+    canMux: true
+  },
+  mpc: { description: 'Musepack', canDemux: true, canMux: false },
+  mpc8: { description: 'Musepack SV8', canDemux: true, canMux: false },
+  mpeg: {
+    description: 'MPEG-1 Systems / MPEG program stream',
+    canDemux: true,
+    canMux: true
+  },
+  mpeg1video: { description: 'raw MPEG-1 video', canDemux: false, canMux: true },
+  mpeg2video: { description: 'raw MPEG-2 video', canDemux: false, canMux: true },
+  mpegts: {
+    description: 'MPEG-TS (MPEG-2 Transport Stream)',
+    canDemux: true,
+    canMux: true
+  },
+  mpegtsraw: {
+    description: 'raw MPEG-TS (MPEG-2 Transport Stream)',
+    canDemux: true,
+    canMux: false
+  },
+  mpegvideo: { description: 'raw MPEG video', canDemux: true, canMux: false },
+  mpjpeg: { description: 'MIME multipart JPEG', canDemux: true, canMux: true },
+  mpl2: { description: 'MPL2 subtitles', canDemux: true, canMux: false },
+  mpsub: { description: 'MPlayer subtitles', canDemux: true, canMux: false },
+  msf: { description: 'Sony PS3 MSF', canDemux: true, canMux: false },
+  msnwctcp: {
+    description: 'MSN TCP Webcam stream',
+    canDemux: true,
+    canMux: false
+  },
+  mtaf: { description: 'Konami PS2 MTAF', canDemux: true, canMux: false },
+  mtv: { description: 'MTV', canDemux: true, canMux: false },
+  mulaw: { description: 'PCM mu-law', canDemux: true, canMux: true },
+  musx: { description: 'Eurocom MUSX', canDemux: true, canMux: false },
+  mv: {
+    description: 'Silicon Graphics Movie',
+    canDemux: true,
+    canMux: false
+  },
+  mvi: { description: 'Motion Pixels MVI', canDemux: true, canMux: false },
+  mxf: {
+    description: 'MXF (Material eXchange Format)',
+    canDemux: true,
+    canMux: true
+  },
+  mxf_d10: {
+    description: 'MXF (Material eXchange Format) D-10 Mapping',
+    canDemux: false,
+    canMux: true
+  },
+  mxf_opatom: {
+    description: 'MXF (Material eXchange Format) Operational Pattern Atom',
+    canDemux: false,
+    canMux: true
+  },
+  mxg: { description: 'MxPEG clip', canDemux: true, canMux: false },
+  nc: { description: 'NC camera feed', canDemux: true, canMux: false },
+  nistsphere: {
+    description: 'NIST SPeech HEader REsources',
+    canDemux: true,
+    canMux: false
+  },
+  nsp: {
+    description: 'Computerized Speech Lab NSP',
+    canDemux: true,
+    canMux: false
+  },
+  nsv: {
+    description: 'Nullsoft Streaming Video',
+    canDemux: true,
+    canMux: false
+  },
+  null: { description: 'raw null video', canDemux: false, canMux: true },
+  nut: { description: 'NUT', canDemux: true, canMux: true },
+  nuv: { description: 'NuppelVideo', canDemux: true, canMux: false },
+  oga: { description: 'Ogg Audio', canDemux: false, canMux: true },
+  ogg: { description: 'Ogg', canDemux: true, canMux: true },
+  ogv: { description: 'Ogg Video', canDemux: false, canMux: true },
+  oma: { description: 'Sony OpenMG audio', canDemux: true, canMux: true },
+  opus: { description: 'Ogg Opus', canDemux: false, canMux: true },
+  paf: {
+    description: 'Amazing Studio Packed Animation File',
+    canDemux: true,
+    canMux: false
+  },
+  pam_pipe: { description: 'piped pam sequence', canDemux: true, canMux: false },
+  pbm_pipe: { description: 'piped pbm sequence', canDemux: true, canMux: false },
+  pcx_pipe: { description: 'piped pcx sequence', canDemux: true, canMux: false },
+  pgm_pipe: { description: 'piped pgm sequence', canDemux: true, canMux: false },
+  pgmyuv_pipe: {
+    description: 'piped pgmyuv sequence',
+    canDemux: true,
+    canMux: false
+  },
+  pictor_pipe: {
+    description: 'piped pictor sequence',
+    canDemux: true,
+    canMux: false
+  },
+  pjs: {
+    description: 'PJS (Phoenix Japanimation Society) subtitles',
+    canDemux: true,
+    canMux: false
+  },
+  pmp: {
+    description: 'Playstation Portable PMP',
+    canDemux: true,
+    canMux: false
+  },
+  png_pipe: { description: 'piped png sequence', canDemux: true, canMux: false },
+  ppm_pipe: { description: 'piped ppm sequence', canDemux: true, canMux: false },
+  psd_pipe: { description: 'piped psd sequence', canDemux: true, canMux: false },
+  psp: {
+    description: 'PSP MP4 (MPEG-4 Part 14)',
+    canDemux: false,
+    canMux: true
+  },
+  psxstr: {
+    description: 'Sony Playstation STR',
+    canDemux: true,
+    canMux: false
+  },
+  pva: { description: 'TechnoTrend PVA', canDemux: true, canMux: false },
+  pvf: {
+    description: 'PVF (Portable Voice Format)',
+    canDemux: true,
+    canMux: false
+  },
+  qcp: { description: 'QCP', canDemux: true, canMux: false },
+  qdraw_pipe: {
+    description: 'piped qdraw sequence',
+    canDemux: true,
+    canMux: false
+  },
+  r3d: { description: 'REDCODE R3D', canDemux: true, canMux: false },
+  rawvideo: { description: 'raw video', canDemux: true, canMux: true },
+  realtext: {
+    description: 'RealText subtitle format',
+    canDemux: true,
+    canMux: false
+  },
+  redspark: { description: 'RedSpark', canDemux: true, canMux: false },
+  rl2: { description: 'RL2', canDemux: true, canMux: false },
+  rm: { description: 'RealMedia', canDemux: true, canMux: true },
+  roq: { description: 'raw id RoQ', canDemux: true, canMux: true },
+  rpl: { description: 'RPL / ARMovie', canDemux: true, canMux: false },
+  rsd: { description: 'GameCube RSD', canDemux: true, canMux: false },
+  rso: { description: 'Lego Mindstorms RSO', canDemux: true, canMux: true },
+  rtp: { description: 'RTP output', canDemux: true, canMux: true },
+  rtp_mpegts: {
+    description: 'RTP/mpegts output format',
+    canDemux: false,
+    canMux: true
+  },
+  rtsp: { description: 'RTSP output', canDemux: true, canMux: true },
+  s16be: {
+    description: 'PCM signed 16-bit big-endian',
+    canDemux: true,
+    canMux: true
+  },
+  s16le: {
+    description: 'PCM signed 16-bit little-endian',
+    canDemux: true,
+    canMux: true
+  },
+  s24be: {
+    description: 'PCM signed 24-bit big-endian',
+    canDemux: true,
+    canMux: true
+  },
+  s24le: {
+    description: 'PCM signed 24-bit little-endian',
+    canDemux: true,
+    canMux: true
+  },
+  s32be: {
+    description: 'PCM signed 32-bit big-endian',
+    canDemux: true,
+    canMux: true
+  },
+  s32le: {
+    description: 'PCM signed 32-bit little-endian',
+    canDemux: true,
+    canMux: true
+  },
+  s337m: { description: 'SMPTE 337M', canDemux: true, canMux: false },
+  s8: { description: 'PCM signed 8-bit', canDemux: true, canMux: true },
+  sami: {
+    description: 'SAMI subtitle format',
+    canDemux: true,
+    canMux: false
+  },
+  sap: { description: 'SAP output', canDemux: true, canMux: true },
+  sbc: { description: 'raw SBC', canDemux: true, canMux: true },
+  sbg: {
+    description: 'SBaGen binaural beats script',
+    canDemux: true,
+    canMux: false
+  },
+  scc: {
+    description: 'Scenarist Closed Captions',
+    canDemux: true,
+    canMux: true
+  },
+  sdp: { description: 'SDP', canDemux: true, canMux: false },
+  sdr2: { description: 'SDR2', canDemux: true, canMux: false },
+  sds: {
+    description: 'MIDI Sample Dump Standard',
+    canDemux: true,
+    canMux: false
+  },
+  sdx: {
+    description: 'Sample Dump eXchange',
+    canDemux: true,
+    canMux: false
+  },
+  segment: { description: 'segment', canDemux: false, canMux: true },
+  ser: {
+    description: 'SER (Simple uncompressed video format for astronomical capturing)',
+    canDemux: true,
+    canMux: false
+  },
+  sgi_pipe: { description: 'piped sgi sequence', canDemux: true, canMux: false },
+  shn: { description: 'raw Shorten', canDemux: true, canMux: false },
+  siff: { description: 'Beam Software SIFF', canDemux: true, canMux: false },
+  singlejpeg: { description: 'JPEG single image', canDemux: false, canMux: true },
+  sln: { description: 'Asterisk raw pcm', canDemux: true, canMux: false },
+  smjpeg: { description: 'Loki SDL MJPEG', canDemux: true, canMux: true },
+  smk: { description: 'Smacker', canDemux: true, canMux: false },
+  smoothstreaming: {
+    description: 'Smooth Streaming Muxer',
+    canDemux: false,
+    canMux: true
+  },
+  smush: { description: 'LucasArts Smush', canDemux: true, canMux: false },
+  sol: { description: 'Sierra SOL', canDemux: true, canMux: false },
+  sox: { description: 'SoX native', canDemux: true, canMux: true },
+  spdif: {
+    description: 'IEC 61937 (used on S/PDIF - IEC958)',
+    canDemux: true,
+    canMux: true
+  },
+  spx: { description: 'Ogg Speex', canDemux: false, canMux: true },
+  srt: { description: 'SubRip subtitle', canDemux: true, canMux: true },
+  stl: {
+    description: 'Spruce subtitle format',
+    canDemux: true,
+    canMux: false
+  },
+  stream_segment: {
+    description: 'streaming segment muxer',
+    canDemux: false,
+    canMux: true
+  },
+  ssegment: {
+    description: 'streaming segment muxer',
+    canDemux: false,
+    canMux: true
+  },
+  subviewer: {
+    description: 'SubViewer subtitle format',
+    canDemux: true,
+    canMux: false
+  },
+  subviewer1: {
+    description: 'SubViewer v1 subtitle format',
+    canDemux: true,
+    canMux: false
+  },
+  sunrast_pipe: {
+    description: 'piped sunrast sequence',
+    canDemux: true,
+    canMux: false
+  },
+  sup: {
+    description: 'raw HDMV Presentation Graphic Stream subtitles',
+    canDemux: true,
+    canMux: true
+  },
+  svag: { description: 'Konami PS2 SVAG', canDemux: true, canMux: false },
+  svcd: { description: 'MPEG-2 PS (SVCD)', canDemux: false, canMux: true },
+  svg_pipe: { description: 'piped svg sequence', canDemux: true, canMux: false },
+  swf: {
+    description: 'SWF (ShockWave Flash)',
+    canDemux: true,
+    canMux: true
+  },
+  tak: { description: 'raw TAK', canDemux: true, canMux: false },
+  tedcaptions: { description: 'TED Talks captions', canDemux: true, canMux: false },
+  tee: { description: 'Multiple muxer tee', canDemux: false, canMux: true },
+  thp: { description: 'THP', canDemux: true, canMux: false },
+  tiertexseq: { description: 'Tiertex Limited SEQ', canDemux: true, canMux: false },
+  tiff_pipe: { description: 'piped tiff sequence', canDemux: true, canMux: false },
+  tmv: { description: '8088flex TMV', canDemux: true, canMux: false },
+  truehd: { description: 'raw TrueHD', canDemux: true, canMux: true },
+  tta: { description: 'TTA (True Audio)', canDemux: true, canMux: true },
+  tty: { description: 'Tele-typewriter', canDemux: true, canMux: false },
+  txd: {
+    description: 'Renderware TeXture Dictionary',
+    canDemux: true,
+    canMux: false
+  },
+  ty: { description: 'TiVo TY Stream', canDemux: true, canMux: false },
+  u16be: {
+    description: 'PCM unsigned 16-bit big-endian',
+    canDemux: true,
+    canMux: true
+  },
+  u16le: {
+    description: 'PCM unsigned 16-bit little-endian',
+    canDemux: true,
+    canMux: true
+  },
+  u24be: {
+    description: 'PCM unsigned 24-bit big-endian',
+    canDemux: true,
+    canMux: true
+  },
+  u24le: {
+    description: 'PCM unsigned 24-bit little-endian',
+    canDemux: true,
+    canMux: true
+  },
+  u32be: {
+    description: 'PCM unsigned 32-bit big-endian',
+    canDemux: true,
+    canMux: true
+  },
+  u32le: {
+    description: 'PCM unsigned 32-bit little-endian',
+    canDemux: true,
+    canMux: true
+  },
+  u8: { description: 'PCM unsigned 8-bit', canDemux: true, canMux: true },
+  uncodedframecrc: {
+    description: 'uncoded framecrc testing',
+    canDemux: false,
+    canMux: true
+  },
+  v210: {
+    description: 'Uncompressed 4:2:2 10-bit',
+    canDemux: true,
+    canMux: false
+  },
+  v210x: {
+    description: 'Uncompressed 4:2:2 10-bit',
+    canDemux: true,
+    canMux: false
+  },
+  vag: { description: 'Sony PS2 VAG', canDemux: true, canMux: false },
+  vc1: { description: 'raw VC-1 video', canDemux: true, canMux: true },
+  vc1test: { description: 'VC-1 test bitstream', canDemux: true, canMux: true },
+  vcd: {
+    description: 'MPEG-1 Systems / MPEG program stream (VCD)',
+    canDemux: false,
+    canMux: true
+  },
+  vidc: { description: 'PCM Archimedes VIDC', canDemux: true, canMux: true },
+  vivo: { description: 'Vivo', canDemux: true, canMux: false },
+  vmd: { description: 'Sierra VMD', canDemux: true, canMux: false },
+  vob: { description: 'MPEG-2 PS (VOB)', canDemux: false, canMux: true },
+  vobsub: {
+    description: 'VobSub subtitle format',
+    canDemux: true,
+    canMux: false
+  },
+  voc: { description: 'Creative Voice', canDemux: true, canMux: true },
+  vpk: { description: 'Sony PS2 VPK', canDemux: true, canMux: false },
+  vplayer: { description: 'VPlayer subtitles', canDemux: true, canMux: false },
+  vqf: {
+    description: 'Nippon Telegraph and Telephone Corporation (NTT) TwinVQ',
+    canDemux: true,
+    canMux: false
+  },
+  w64: { description: 'Sony Wave64', canDemux: true, canMux: true },
+  wav: {
+    description: 'WAV / WAVE (Waveform Audio)',
+    canDemux: true,
+    canMux: true
+  },
+  wc3movie: {
+    description: 'Wing Commander III movie',
+    canDemux: true,
+    canMux: false
+  },
+  webm_chunk: { description: 'WebM Chunk Muxer', canDemux: false, canMux: true },
+  webm_dash_manifest: { description: 'WebM DASH Manifest', canDemux: true, canMux: true },
+  webp: { description: 'WebP', canDemux: false, canMux: true },
+  webp_pipe: { description: 'piped webp sequence', canDemux: true, canMux: false },
+  webvtt: { description: 'WebVTT subtitle', canDemux: true, canMux: true },
+  wsaud: {
+    description: 'Westwood Studios audio',
+    canDemux: true,
+    canMux: false
+  },
+  wsd: {
+    description: 'Wideband Single-bit Data (WSD)',
+    canDemux: true,
+    canMux: false
+  },
+  wsvqa: {
+    description: 'Westwood Studios VQA',
+    canDemux: true,
+    canMux: false
+  },
+  wtv: {
+    description: 'Windows Television (WTV)',
+    canDemux: true,
+    canMux: true
+  },
+  wv: { description: 'raw WavPack', canDemux: true, canMux: true },
+  wve: { description: 'Psion 3 audio', canDemux: true, canMux: false },
+  xa: { description: 'Maxis XA', canDemux: true, canMux: false },
+  xbin: {
+    description: 'eXtended BINary text (XBIN)',
+    canDemux: true,
+    canMux: false
+  },
+  xmv: { description: 'Microsoft XMV', canDemux: true, canMux: false },
+  xpm_pipe: { description: 'piped xpm sequence', canDemux: true, canMux: false },
+  xvag: { description: 'Sony PS3 XVAG', canDemux: true, canMux: false },
+  xwd_pipe: { description: 'piped xwd sequence', canDemux: true, canMux: false },
+  xwma: { description: 'Microsoft xWMA', canDemux: true, canMux: false },
+  yop: { description: 'Psygnosis YOP', canDemux: true, canMux: false },
+  yuv4mpegpipe: { description: 'YUV4MPEG pipe', canDemux: true, canMux: true }
+}
