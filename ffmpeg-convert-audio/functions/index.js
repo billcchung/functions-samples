@@ -19,7 +19,7 @@ function promisifyCommand(command) {
  * When an audio is uploaded in the Storage bucket We generate a mono channel audio automatically using
  * node-fluent-ffmpeg.
  */
-exports.convertWavToOgg = functions.region('asia-east2').storage.bucket("orientalverse-songs-wav").object().onFinalize(async (object) => {
+exports.convertWavToAAC = functions.region('asia-east2').storage.bucket("gemmi-songs-wav-prod").object().onFinalize(async (object) => {
     console.log(object);
     console.log(ffmpegInstaller.path, ffmpegInstaller.version);
     const fileBucket = object.bucket; // The Storage bucket that contains the file.
@@ -27,7 +27,7 @@ exports.convertWavToOgg = functions.region('asia-east2').storage.bucket("orienta
     const contentType = object.contentType; // File content type.
 
     // Exit if this is triggered on a file that is not an audio.
-    if (!contentType.startsWith('audio/wav')) {
+    if (!contentType.startsWith('audio/wav') && !contentType.startsWith('audio/x-wav')) {
         console.log('This is not a wav audio.');
         return null;
     }
@@ -39,7 +39,7 @@ exports.convertWavToOgg = functions.region('asia-east2').storage.bucket("orienta
     const gcs = new Storage();
     const bucket = gcs.bucket(fileBucket);
     const tempFilePath = path.join(os.tmpdir(), fileName);
-    const targetTempFileName = fileName.replace(/\.[^/.]+$/, '') + '.ogg';
+    const targetTempFileName = fileName.replace(/\.[^/.]+$/, '') + '.aac';
     const targetTempFilePath = path.join(os.tmpdir(), targetTempFileName);
     const targetStorageFilePath = path.join(path.dirname(filePath), targetTempFileName);
 
@@ -49,14 +49,14 @@ exports.convertWavToOgg = functions.region('asia-east2').storage.bucket("orienta
 
     let command = ffmpeg(tempFilePath)
         .setFfmpegPath(ffmpegInstaller.path)
-        .format('ogg')
+        .format('adts')
         .output(targetTempFilePath);
 
     await promisifyCommand(command);
     console.log('Output audio created at', targetTempFilePath);
     // Uploading the audio.
     const newBucket = gcs.bucket(fileBucket.replace('-wav', ''));
-    await newBucket.upload(targetTempFilePath, {destination: targetStorageFilePath});
+    await newBucket.upload(targetTempFilePath, {destination: targetStorageFilePath, resumable: false});
     console.log('Output audio uploaded to', targetStorageFilePath);
 
     // Once the audio has been uploaded delete the local file to free up disk space.
